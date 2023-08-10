@@ -13,27 +13,46 @@ const canvasHeight = 500;
  */
 
 const letterA = {
-  "size": 80,
-  "offsetx": 0,
-  "offsety": 35
+  "size": 100,
+  "offsetx": 75,
+  "offsety": 50,
+  "offset2x": 15,
+  "offset2y": 135,
+  "offset3x": 135,
+  "offset3y": 135,
+  "offset4x": 75,
+  "offset4y": 10,
+  
 }
 
 const letterB = {
-  "size": 150,
-  "offsetx": 0,
-  "offsety": -145
+  "size": 140,
+  "offsetx": 75,
+  "offsety": 50,
+  "offset2x": 15,
+  "offset2y": 15,
+  "offset3x": 75,
+  "offset3y": 140,
+  "offset4x": 135,
+  "offset4y": 15,
 }
 
 const letterC = {
-  "size": 100,
-  "offsetx": 30,
-  "offsety": 0
+  "size": 105,
+  "offsetx": 100,
+  "offsety": 75,
+  "offset2x": 15,
+  "offset2y": 15,
+  "offset3x": 15,
+  "offset3y": 135,
+  "offset4x": 140,
+  "offset4y": 75,
 }
 
-const backgroundColor  = "#caf0f8";
+const backgroundColor  = "##FFFFFF";
 const strokeColor      = "#03045e";
 
-const darkBlue  = "#0077b6";
+const darkBlue  = "#B0e2ef";
 const lightBlue  = "#90e0ef";
 
 function setup () {
@@ -43,7 +62,7 @@ function setup () {
 
   // color/stroke setup
   stroke(strokeColor);
-  strokeWeight(4);
+  strokeWeight(0);
 
   // with no animation, redrawing the screen is not necessary
   noLoop();
@@ -68,12 +87,23 @@ function drawLetter(posx, posy, letterData) {
   let size2 = letterData["size"];
   let pos2x = posx + letterData["offsetx"];
   let pos2y = posy + letterData["offsety"];
+  let pos3x = posx + letterData["offset2x"];
+  let pos3y = posy + letterData["offset2y"];
+  let pos4x = posx + letterData["offset3x"];
+  let pos4y = posy + letterData["offset3y"];
+  let pos5x = posx + letterData["offset4x"];
+  let pos5y = posy + letterData["offset4y"];
+  let pos6x = posx + letterData["offset5x"];
+  let pos6y = posy + letterData["offset5y"];
 
   // draw two circles
   fill(darkBlue);
-  ellipse(posx, posy, 150, 150);
+  square(posx, posy, 150,10);
+  print(posx,posy)
+  fill("#000000");
+  triangle(pos3x,pos3y,pos4x,pos4y,pos5x,pos5y)
   fill(lightBlue);
-  ellipse(pos2x, pos2y, size2, size2);
+  ellipse(pos2x, pos2y, size2 - 70, size2 - 80);
 }
 
 function keyTyped() {
