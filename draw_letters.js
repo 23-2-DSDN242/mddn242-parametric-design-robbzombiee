@@ -22,6 +22,7 @@ function drawLetter(letterData) {
 
   // determine parameters for second circle
   let size2 = letterData["size"];
+  let size3 = letterData["size"];
   let pos2x = 75  + letterData["offsetx"];
   let pos2y = 180 + letterData["offsety"];
 
@@ -31,6 +32,7 @@ function drawLetter(letterData) {
   square(50, 150, 75);
   fill(lightBlue);
   ellipse(pos2x, pos2y, size2, size2);
+  square(90, 200, size3);
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
