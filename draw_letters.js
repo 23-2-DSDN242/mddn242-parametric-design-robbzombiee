@@ -1,5 +1,5 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#caf0f8";
+var systemBackgroundColor = "#e3e3e3";
 var systemLineColor = "#000090";
 var systemBoxColor = "#00c800";
 
@@ -17,17 +17,18 @@ const strokeColor  = "#03045e";
  */
 function drawLetter(letterData) {
   // color/stroke setup
-  stroke(strokeColor);
-  strokeWeight(4);
+  //stroke(strokeColor);
+  //strokeWeight(4);
 
   // determine parameters for second circle
   let size2 = letterData["size"];
-  let pos2x = 50  + letterData["offsetx"];
-  let pos2y = 150 + letterData["offsety"];
+  let pos2x = 75  + letterData["offsetx"];
+  let pos2y = 180 + letterData["offsety"];
 
   // draw two circles
+  noStroke();
   fill(darkBlue);
-  ellipse(50, 150, 75, 75);
+  square(50, 150, 75);
   fill(lightBlue);
   ellipse(pos2x, pos2y, size2, size2);
 }
