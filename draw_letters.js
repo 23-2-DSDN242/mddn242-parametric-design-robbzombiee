@@ -25,6 +25,8 @@ function drawLetter(letterData) {
   let size3 = letterData["size"];
   let pos2x = 75  + letterData["offsetx"];
   let pos2y = 180 + letterData["offsety"];
+  let pos3x = 90 + letterData["offset1x"];
+  let pos3y = 200 + letterData["offset1y"]
 
   // draw two circles
   noStroke();
@@ -32,7 +34,7 @@ function drawLetter(letterData) {
   square(50, 150, 75);
   fill(lightBlue);
   ellipse(pos2x, pos2y, size2, size2);
-  square(90, 200, size3);
+  square(pos3x, pos3y, size3);
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
@@ -40,6 +42,8 @@ function interpolate_letter(percent, oldObj, newObj) {
   new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
   new_letter["offsetx"] = map(percent, 0, 100, oldObj["offsetx"], newObj["offsetx"]);
   new_letter["offsety"] = map(percent, 0, 100, oldObj["offsety"], newObj["offsety"]);
+  new_letter["offset1x"] = map(percent, 0, 100, oldObj["offset1x"], newObj["offset1x"]);
+  new_letter["offset1y"] = map(percent, 0, 100, oldObj["offset1y"], newObj["offset1y"]);
   return new_letter;
 }
 
