@@ -17,21 +17,22 @@ const strokeColor  = "#03045e";
  */
 function drawLetter(letterData) {
   // color/stroke setup
-  //stroke(strokeColor);
-  //strokeWeight(4);
+  stroke(strokeColor);
+  strokeWeight(4);
 
   // determine parameters for second circle
   let size2 = letterData["size"];
   let size3 = letterData["size"];
-  let pos2x = 75  + letterData["offsetx"];
-  let pos2y = 180 + letterData["offsety"];
-  let pos3x = 90 + letterData["offset1x"];
-  let pos3y = 200 + letterData["offset1y"]
+  let pos2x = 50  + letterData["offsetx"];
+  let pos2y = 100 + letterData["offsety"];
+  let pos3x = 50 + letterData["offset1x"];
+  let pos3y = 50 + letterData["offset1y"]
 
   // draw two circles
   noStroke();
   fill(darkBlue);
-  square(50, 150, 75);
+  square(10, 80, 75);
+  square(10, 0, 75);
   fill(lightBlue);
   ellipse(pos2x, pos2y, size2, size2);
   square(pos3x, pos3y, size3);
