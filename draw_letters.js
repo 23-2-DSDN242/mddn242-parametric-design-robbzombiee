@@ -21,18 +21,45 @@ function drawLetter(letterData) {
   //strokeWeight(4);
 
   // determine parameters for second circle
-  let size = letterData["size"];
+  let SquareSize = letterData["SquareSize"];
+  let SquareX = letterData["SquareX"]
+  let SquareY = letterData["SquareY"]
+
+  let RectangleX = letterData["RectangleX"]
+  let RectangleY = letterData["RectangleY"]
+  let RectangleWidth = letterData["RectangleWidth"]
+  let RectangleHeight = letterData["RectangleHeight"]
 
 
   // draw two circles
+  // MainShapes
   noStroke();
+  fill("#B32E2E")
+  rect(RectangleX, RectangleY, RectangleWidth,RectangleHeight);
+  
   fill(darkBlue);
-  square(0, 0, size);
+  square(SquareX, SquareY, SquareSize);
+
+
+  //SubShapes
+
+  //Default
+
+  //A//
+
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
+  new_letter["SquareSize"]    = map(percent, 0, 100, oldObj["SquareSize"], newObj["SquareSize"]);
+  new_letter["SquareX"]    = map(percent, 0, 100, oldObj["SquareX"], newObj["SquareX"]);
+  new_letter["SquareY"]    = map(percent, 0, 100, oldObj["SquareY"], newObj["SquareY"]);
+
+  new_letter["RectangleX"]    = map(percent, 0, 100, oldObj["RectangleX"], newObj["RectangleX"]);
+  new_letter["RectangleY"]    = map(percent, 0, 100, oldObj["RectangleY"], newObj["RectangleY"]);
+  new_letter["RectangleWidth"]    = map(percent, 0, 100, oldObj["RectangleWidth"], newObj["RectangleWidth"]);
+  new_letter["RectangleHeight"]    = map(percent, 0, 100, oldObj["RectangleHeight"], newObj["RectangleHeight"]);
+
 
   return new_letter;
 }

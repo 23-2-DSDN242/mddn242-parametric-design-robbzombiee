@@ -5,7 +5,16 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["size",       0, 100]
+  ["SquareX",       0, 100],
+  ["SquareY",       0, 100],
+  ["SquareSize",       0, 100],
+
+  ["RectangleX",       0, 100],
+  ["RectangleY",       0, 100],
+  ["RectangleWidth",       0, 100],
+  ["RectangleHeight",       0, 200],
+
+
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.
