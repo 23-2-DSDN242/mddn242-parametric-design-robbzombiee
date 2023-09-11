@@ -4,14 +4,14 @@ const alphabet = {
     "arcStart" : 0,
     "arcEnd" : 360,
 
-    "circX" : 50,
-    "circY" : 50,
-    "circSize" : 50,
+    "circX" : 10,
+    "circY" : 10,
+    "circSize" : 10,
 
-    "rectX" : 50,
-    "rectY" : 150,
-    "rectWidth" : 34,
-    "rectHeight" : 28,
+    "rectX" : 40,
+    "rectY" : 10,
+    "rectWidth" : 10,
+    "rectHeight" : 10,
     "rectRotate" : 45
 
   },
