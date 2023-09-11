@@ -21,9 +21,15 @@ const alphabet = {
     "arcStart" : 0,
     "arcEnd" : 360,
 
-    "circX" : 48,
-    "circY" : 100,
-    "circSize" : 25,
+    "circX" : 50,
+    "circY" : 96,
+    "circSize" : 36,
+
+    "rectX" : 73,
+    "rectY" : 115.99,
+    "rectWidth" : 8,
+    "rectHeight" : 21,
+    "rectRotate" : 133
 
   }
 
