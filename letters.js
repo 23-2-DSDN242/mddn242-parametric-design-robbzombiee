@@ -31,7 +31,44 @@ const alphabet = {
     "rectHeight" : 21,
     "rectRotate" : 133
 
-  }
+  },
+
+  "B" : {
+
+    "arcStart" : 0,
+    "arcEnd" : 360,
+
+    "circX" : 24,
+    "circY" : 98,
+    "circSize" : 15.5,
+
+    "rectX" : 20,
+    "rectY" : 78,
+    "rectWidth" : 108,
+    "rectHeight" : 8,
+    "rectRotate" : 270
+
+  },
+
+  "C" : {
+
+    "arcStart" : 0,
+    "arcEnd" : 360,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 28.999,
+
+    "rectX" : 63,
+    "rectY" : 100,
+    "rectWidth" : 24,
+    "rectHeight" : 27,
+    "rectRotate" : 180
+
+  },
+
+  
+
 
 // "A": {
   //  "aLengthX1" : 50,
