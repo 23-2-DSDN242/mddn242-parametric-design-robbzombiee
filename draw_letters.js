@@ -21,44 +21,55 @@ function drawLetter(letterData) {
   //strokeWeight(4);
 
   // determine parameters for second circle
-  let SquareSize = letterData["SquareSize"];
-  let SquareX = letterData["SquareX"]
-  let SquareY = letterData["SquareY"]
 
-  let RectangleX = letterData["RectangleX"]
-  let RectangleY = letterData["RectangleY"]
-  let RectangleWidth = letterData["RectangleWidth"]
-  let RectangleHeight = letterData["RectangleHeight"]
+  let aLengthX1 = letterData["aLengthX1"];
+  let aLengthY1 = letterData["aLengthY1"];
+
+  let aLengthX2 = letterData["aLengthX2"];
+  let aLengthY2 = letterData["aLengthY2"];
+
+  let aLengthX3 = letterData["aLengthX3"];
+  let aLengthY3 = letterData["aLengthY3"];
+
+
+
 
 
   // draw two circles
   // MainShapes
-  noStroke();
+
+  //A//
+  strokeWeight(4);
   fill("#B32E2E")
-  rect(RectangleX, RectangleY, RectangleWidth,RectangleHeight);
-  
-  fill(darkBlue);
-  square(SquareX, SquareY, SquareSize);
+// create A//
+line(95,150, aLengthX1, aLengthY1); // 95, 150, 50,50
+line(50,50,aLengthX2,aLengthY2); //150
+line(5,150,aLengthX3,aLengthY3);
+
 
 
   //SubShapes
 
   //Default
 
-  //A//
 
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["SquareSize"]    = map(percent, 0, 100, oldObj["SquareSize"], newObj["SquareSize"]);
-  new_letter["SquareX"]    = map(percent, 0, 100, oldObj["SquareX"], newObj["SquareX"]);
-  new_letter["SquareY"]    = map(percent, 0, 100, oldObj["SquareY"], newObj["SquareY"]);
+//  new_letter["SquareSize"]    = map(percent, 0, 100, oldObj["SquareSize"], newObj["SquareSize"]);
 
-  new_letter["RectangleX"]    = map(percent, 0, 100, oldObj["RectangleX"], newObj["RectangleX"]);
-  new_letter["RectangleY"]    = map(percent, 0, 100, oldObj["RectangleY"], newObj["RectangleY"]);
-  new_letter["RectangleWidth"]    = map(percent, 0, 100, oldObj["RectangleWidth"], newObj["RectangleWidth"]);
-  new_letter["RectangleHeight"]    = map(percent, 0, 100, oldObj["RectangleHeight"], newObj["RectangleHeight"]);
+new_letter["aLengthX1"]    = map(percent, 0, 100, oldObj["aLengthX1"], newObj["alengthX1"]);
+new_letter["aLengthY1"]    = map(percent, 0, 100, oldObj["aLengthY1"], newObj["alengthY1"]);
+
+new_letter["aLengthX2"]    = map(percent, 0, 100, oldObj["aLengthX2"], newObj["alengthX2"]);
+new_letter["aLengthY2"]    = map(percent, 0, 100, oldObj["aLengthY2"], newObj["alengthY2"]);
+
+new_letter["aLengthX3"]    = map(percent, 0, 100, oldObj["aLengthX3"], newObj["alengthX3"]);
+new_letter["aLengthY3"]    = map(percent, 0, 100, oldObj["aLengthY3"], newObj["alengthY3"]);
+
+
+
 
 
   return new_letter;

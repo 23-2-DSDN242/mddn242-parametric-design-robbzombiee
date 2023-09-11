@@ -1,13 +1,15 @@
 const alphabet = {
   "default": {
-    "SquareX" : 0,
-    "SquareY" : 0,
-    "SquareSize" : 50,
 
-    "RectangleX" : 0,
-    "RectangleY" : 0,
-    "RectangleWidth" : 50,
-    "RectangleHeight" : 50,
+  },
+
+  "A": {
+    "aLengthX1" : 50,
+    "aLengthY1" : 50,
+    "aLengthX2" : 5,
+    "aLengthY2" : 150,
+    "aLengthX3" : 50,
+    "aLengthY3" : 150,
   }
 
 }
