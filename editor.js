@@ -5,10 +5,18 @@
  * ["object_field", minimum_bound, maximum_bound]
  */
 const sliderInfo = [
-  ["aLengthX1",       0, 50],
-  ["aLengthY1",       0, 50],
-  ["aLengthX2",       0, 5],
-  ["aLengthY2",       0, 150],
+  ["arcStart",       0, 360],
+  ["arcEnd",         0, 360],
+
+  ["circX",       0, 100],
+  ["circY",         0, 200],
+  ["circSize",         0, 50],
+
+  ["rectX",         0, 100],
+  ["rectY",         0, 200],
+  ["rectWidth",         0, 100],
+  ["rectLength",         0, 200],
+  ["rectRotate",         0, 360],
 
 
 

@@ -22,36 +22,44 @@ function drawLetter(letterData) {
 
   // determine parameters for second circle
 
-  let aLengthX1 = letterData["aLengthX1"];
-  let aLengthY1 = letterData["aLengthY1"];
+  //let aLengthX1 = letterData["aLengthX1"];
+  let arcStart = letterData["arcStart"];
+  let arcEnd = letterData["arcEnd"];
 
-  let aLengthX2 = letterData["aLengthX2"];
-  let aLengthY2 = letterData["aLengthY2"];
+  let circX = letterData["circX"];
+  let circY = letterData["circY"];
+  let circSize = letterData["circSize"]
 
-  let aLengthX3 = letterData["aLengthX3"];
-  let aLengthY3 = letterData["aLengthY3"];
-
-
-
-
-
+  let rectX = letterData["rectX"]
+  let rectY = letterData["rectY"]
+  let rectWidth = letterData["rectWidth"]
+  let rectLength = letterData["rectLength"]
+  let rectRotate = letterData["rectRotate"]
   // draw two circles
   // MainShapes
 
   //A//
-  strokeWeight(4);
+  angleMode(DEGREES);
+  
+  noStroke();
   fill("#B32E2E")
-// create A//
-line(95,150, aLengthX1, aLengthY1); // 95, 150, 50,50
-line(50,50,aLengthX2,aLengthY2); //150
-line(5,150,aLengthX3,aLengthY3);
+  arc(50,100,50,50,arcStart,arcEnd);
+
+  fill("#4285F4 ")
+  circle(circX, circY, circSize);
 
 
+  fill("#F4B400");
+  push();
+  translate(rectX,rectY);
+  rotate(rectRotate);
+  rectMode(CENTER);
+  rect(0, 0, rectWidth, rectLength);
+  pop();
 
   //SubShapes
 
   //Default
-
 
 }
 
@@ -59,18 +67,18 @@ function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
 //  new_letter["SquareSize"]    = map(percent, 0, 100, oldObj["SquareSize"], newObj["SquareSize"]);
 
-new_letter["aLengthX1"]    = map(percent, 0, 100, oldObj["aLengthX1"], newObj["alengthX1"]);
-new_letter["aLengthY1"]    = map(percent, 0, 100, oldObj["aLengthY1"], newObj["alengthY1"]);
+new_letter["arcStart"]  = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
+new_letter["arcEnd"]    = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"]);
 
-new_letter["aLengthX2"]    = map(percent, 0, 100, oldObj["aLengthX2"], newObj["alengthX2"]);
-new_letter["aLengthY2"]    = map(percent, 0, 100, oldObj["aLengthY2"], newObj["alengthY2"]);
+new_letter["circX"]    = map(percent, 0, 100, oldObj["circX"], newObj["circX"]);
+new_letter["circY"]    = map(percent, 0, 100, oldObj["circY"], newObj["circY"]);
+new_letter["circSize"]    = map(percent, 0, 100, oldObj["circSize"], newObj["circSize"]);
 
-new_letter["aLengthX3"]    = map(percent, 0, 100, oldObj["aLengthX3"], newObj["alengthX3"]);
-new_letter["aLengthY3"]    = map(percent, 0, 100, oldObj["aLengthY3"], newObj["alengthY3"]);
-
-
-
-
+new_letter["rectX"]    = map(percent, 0, 100, oldObj["rectX"], newObj["rectX"]);
+new_letter["rectY"]    = map(percent, 0, 100, oldObj["rectY"], newObj["rectY"]);
+new_letter["rectWidth"]  = map(percent, 0, 100, oldObj["rectWidth"], newObj["rectWidth"]);
+new_letter["rectLength"]  = map(percent, 0, 100, oldObj["rectLength"], newObj["rectLength"]);
+new_letter["rectRotate"]  = map(percent, 0, 100, oldObj["rectRotate"], newObj["rectRotate"]);
 
   return new_letter;
 }
