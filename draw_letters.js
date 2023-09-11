@@ -34,6 +34,7 @@ function drawLetter(letterData) {
   let rectY = letterData["rectY"]
   let rectWidth = letterData["rectWidth"]
   let rectHeight = letterData["rectHeight"]
+  let rectRotate = letterData["rectRotate"]
 
   // draw two circles
   // MainShapes
@@ -48,9 +49,12 @@ function drawLetter(letterData) {
   fill("#4285F4 ")
   circle(circX, circY, circSize);
 
+push();
+  translate(rectX,rectY);
+  rotate(rectRotate);
   rectMode(CENTER);
-  rotate()
-  rect(rectX,rectY,rectWidth,rectHeight);
+  rect(0,0,rectWidth,rectHeight);
+pop();
 
   //SubShapes
 

@@ -10,8 +10,8 @@ const alphabet = {
 
     "rectX" : 50,
     "rectY" : 150,
-    "rectWidth" : 20,
-    "rectHeight" : 20,
+    "rectWidth" : 34,
+    "rectHeight" : 28,
     "rectRotate" : 45
 
   },
