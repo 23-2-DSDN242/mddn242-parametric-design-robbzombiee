@@ -33,8 +33,8 @@ function drawLetter(letterData) {
   let rectX = letterData["rectX"]
   let rectY = letterData["rectY"]
   let rectWidth = letterData["rectWidth"]
-  let rectLength = letterData["rectLength"]
-  let rectRotate = letterData["rectRotate"]
+  let rectHeight = letterData["rectHeight"]
+
   // draw two circles
   // MainShapes
 
@@ -48,14 +48,9 @@ function drawLetter(letterData) {
   fill("#4285F4 ")
   circle(circX, circY, circSize);
 
-
-  fill("#F4B400");
-  push();
-  translate(rectX,rectY);
-  rotate(rectRotate);
   rectMode(CENTER);
-  rect(0, 0, rectWidth, rectLength);
-  pop();
+  rotate()
+  rect(rectX,rectY,rectWidth,rectHeight);
 
   //SubShapes
 
@@ -65,7 +60,6 @@ function drawLetter(letterData) {
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-//  new_letter["SquareSize"]    = map(percent, 0, 100, oldObj["SquareSize"], newObj["SquareSize"]);
 
 new_letter["arcStart"]  = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
 new_letter["arcEnd"]    = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"]);
@@ -76,9 +70,9 @@ new_letter["circSize"]    = map(percent, 0, 100, oldObj["circSize"], newObj["cir
 
 new_letter["rectX"]    = map(percent, 0, 100, oldObj["rectX"], newObj["rectX"]);
 new_letter["rectY"]    = map(percent, 0, 100, oldObj["rectY"], newObj["rectY"]);
-new_letter["rectWidth"]  = map(percent, 0, 100, oldObj["rectWidth"], newObj["rectWidth"]);
-new_letter["rectLength"]  = map(percent, 0, 100, oldObj["rectLength"], newObj["rectLength"]);
-new_letter["rectRotate"]  = map(percent, 0, 100, oldObj["rectRotate"], newObj["rectRotate"]);
+new_letter["rectWidth"]    = map(percent, 0, 100, oldObj["rectWidth"], newObj["rectWidth"]);
+new_letter["rectHeight"]    = map(percent, 0, 100, oldObj["rectHeight"], newObj["rectHeight"]);
+new_letter["rectRotate"]    = map(percent, 0, 100, oldObj["rectRotate"], newObj["rectRotate"]);
 
   return new_letter;
 }

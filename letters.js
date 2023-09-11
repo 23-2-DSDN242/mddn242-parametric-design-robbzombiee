@@ -7,12 +7,12 @@ const alphabet = {
     "circX" : 50,
     "circY" : 50,
     "circSize" : 50,
-    
+
     "rectX" : 50,
-    "rectY" : 50,
-    "rectWidth" : 10,
-    "rectHeight" : 100,
-    "rectRotate" : 0
+    "rectY" : 150,
+    "rectWidth" : 20,
+    "rectHeight" : 20,
+    "rectRotate" : 45
 
   },
 
@@ -24,12 +24,6 @@ const alphabet = {
     "circX" : 48,
     "circY" : 100,
     "circSize" : 25,
-
-    "rectX" : 71,
-    "rectY" : 115,
-    "rectWidth" : 26,
-    "rectHeight" : 6,
-    "rectRotate" : 226
 
   }
 

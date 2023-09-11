@@ -14,9 +14,9 @@ const sliderInfo = [
 
   ["rectX",         0, 100],
   ["rectY",         0, 200],
-  ["rectWidth",         0, 100],
-  ["rectLength",         0, 200],
-  ["rectRotate",         0, 360],
+  ["rectWidth",         0, 200],
+  ["rectHeight",         0, 100],
+  ["rectRotate",         0, 360]
 
 
 
