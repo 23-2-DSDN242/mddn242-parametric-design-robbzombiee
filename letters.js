@@ -8,11 +8,19 @@ const alphabet = {
     "circY" : 10,
     "circSize" : 10,
 
-    "rectX" : 40,
+    "rectX" : 90,
     "rectY" : 10,
     "rectWidth" : 10,
     "rectHeight" : 10,
-    "rectRotate" : 45
+    "rectRotate" : 45,
+
+    "triX" : 0,
+    "triY" : 0,
+    "triHeight" : 0,
+    "triWidth" : 0,
+
+    "imageX" : 50,
+    "imageY" : 100
 
   },
 
@@ -29,8 +37,7 @@ const alphabet = {
     "rectY" : 106,
     "rectWidth" : 32,
     "rectHeight" : 8,
-    "rectRotate" : 259.2
-
+    "rectRotate" : 259.2,
   },
   
   "B" : {
@@ -80,6 +87,23 @@ const alphabet = {
     "rectY" : 80,
     "rectWidth" : 6,
     "rectHeight" : 95,
+    "rectRotate" : 180
+
+  },
+
+  "E" : {
+
+    "arcStart" : 0,
+    "arcEnd" : 360,
+
+    "circX" : 28,
+    "circY" : 100,
+    "circSize" : 11.5,
+
+    "rectX" : 59,
+    "rectY" : 100,
+    "rectWidth" : 64,
+    "rectHeight" : 5,
     "rectRotate" : 180
 
   }
