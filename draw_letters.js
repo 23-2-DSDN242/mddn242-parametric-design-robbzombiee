@@ -21,29 +21,62 @@ function drawLetter(letterData) {
   //strokeWeight(4);
 
   // determine parameters for second circle
-  let size = letterData["size"];
-  let aposx1 = letterData["aposx1"]
-  let aposx2 = letterData["aposx2"]
 
+  //let aLengthX1 = letterData["aLengthX1"];
+  let arcStart = letterData["arcStart"];
+  let arcEnd = letterData["arcEnd"];
+
+  let circX = letterData["circX"];
+  let circY = letterData["circY"];
+  let circSize = letterData["circSize"]
+
+  let rectX = letterData["rectX"]
+  let rectY = letterData["rectY"]
+  let rectWidth = letterData["rectWidth"]
+  let rectHeight = letterData["rectHeight"]
+  let rectRotate = letterData["rectRotate"]
 
   // draw two circles
-  fill(darkBlue);
-  square(0, 0, size);
+  // MainShapes
 
-  //A //
+  //A//
+  angleMode(DEGREES);
   
-  strokeWeight(2);
-  line(50 + aposx1,0,0 + aposx2,200);
-  line(50,0,100,200);
-  
+  noStroke();
+  fill("#B32E2E")
+  arc(50,100,50,50,arcStart,arcEnd);
+
+  fill("#4285F4 ")
+  circle(circX, circY, circSize);
+
+push();
+  translate(rectX,rectY);
+  rotate(rectRotate);
+  rectMode(CENTER);
+  rect(0,0,rectWidth,rectHeight);
+pop();
+
+  //SubShapes
+
+  //Default
 
 }
 
 function interpolate_letter(percent, oldObj, newObj) {
   let new_letter = {};
-  new_letter["size"]    = map(percent, 0, 100, oldObj["size"], newObj["size"]);
-  new_letter["aposx1"]    = map(percent, 0, 100, oldObj["aposx1"], newObj["aposx1"]);
-  new_letter["aposx2"]    = map(percent, 0, 100, oldObj["aposx2"], newObj["aposx2"]);
+
+new_letter["arcStart"]  = map(percent, 0, 100, oldObj["arcStart"], newObj["arcStart"]);
+new_letter["arcEnd"]    = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"]);
+
+new_letter["circX"]    = map(percent, 0, 100, oldObj["circX"], newObj["circX"]);
+new_letter["circY"]    = map(percent, 0, 100, oldObj["circY"], newObj["circY"]);
+new_letter["circSize"]    = map(percent, 0, 100, oldObj["circSize"], newObj["circSize"]);
+
+new_letter["rectX"]    = map(percent, 0, 100, oldObj["rectX"], newObj["rectX"]);
+new_letter["rectY"]    = map(percent, 0, 100, oldObj["rectY"], newObj["rectY"]);
+new_letter["rectWidth"]    = map(percent, 0, 100, oldObj["rectWidth"], newObj["rectWidth"]);
+new_letter["rectHeight"]    = map(percent, 0, 100, oldObj["rectHeight"], newObj["rectHeight"]);
+new_letter["rectRotate"]    = map(percent, 0, 100, oldObj["rectRotate"], newObj["rectRotate"]);
 
   return new_letter;
 }
