@@ -11,20 +11,23 @@ const sliderInfo = [
   ["circX",       0, 100],
   ["circY",         0, 200],
   ["circSize",         0, 50],
+  ["circStart",       0, 360],
+  ["circEnd",         0, 360],
 
   ["rectX",         0, 100],
   ["rectY",         0, 200],
   ["rectWidth",         0, 200],
   ["rectHeight",         0, 100],
   ["rectRotate",         0, 360],
-  ["triX",         0, 100],
-  ["triY",         0, 200],
-  ["triHeight",         -100, 0],
-  ["triWidth",         0, 200],
 
+  ["moonspot1X",         0, 100],
+  ["moonspot1Y",         0, 200],
 
+  ["moonspot2X",         0, 100],
+  ["moonspot2Y",         0, 200],
 
-
+  ["moonspot3X",         0, 100],
+  ["moonspot3Y",         0, 200],
 ];
 
 // PROBABLY DON'T NEED TO EDIT ANYTHING ELSE. STOP HERE.

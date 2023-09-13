@@ -23,32 +23,34 @@ function drawLetter(letterData) {
   // determine parameters for second circle
 
   //let aLengthX1 = letterData["aLengthX1"];
+
   let arcStart = letterData["arcStart"];
   let arcEnd = letterData["arcEnd"];
 
-  let imageX = letterData["imageX"];
-  let imageY = letterData["imageY"];
-
   let circX = letterData["circX"];
   let circY = letterData["circY"];
-  let circSize = letterData["circSize"]
+  let circSize = letterData["circSize"];
+  let circStart = letterData["circStart"];
+  let circEnd = letterData["circEnd"];
 
-  let rectX = letterData["rectX"]
-  let rectY = letterData["rectY"]
-  let rectWidth = letterData["rectWidth"]
-  let rectHeight = letterData["rectHeight"]
-  let rectRotate = letterData["rectRotate"]
+  let rectX = letterData["rectX"];
+  let rectY = letterData["rectY"];
+  let rectWidth = letterData["rectWidth"];
+  let rectHeight = letterData["rectHeight"];
+  let rectRotate = letterData["rectRotate"];
 
-  let triX = letterData["triX"]
-  let triY = letterData["triY"]
-  let triHeight = letterData["triHeight"]
-  let triWidth = letterData["triWidth"]
+  let moonspot1X = letterData["moonspot1X"];
+  let moonspot1Y = letterData["moonspot1Y"];
+  let moonspot2X = letterData["moonspot2X"];
+  let moonspot2Y = letterData["moonspot2Y"];
+  let moonspot3X = letterData["moonspot3X"];
+  let moonspot3Y = letterData["moonspot3Y"];
 
 
   // draw two circles
   // MainShapes
   noStroke()
-  fill("#ffe234");
+  fill("#ffe85e");
   circle(10, 10, 10);
   rect(50,5,10,10);
 
@@ -59,23 +61,23 @@ function drawLetter(letterData) {
   fill("#e5e5e5")
   arc(50,100,50,50,arcStart,arcEnd);
 
+  //moon moonspots
   fill("#c2c2c2")
-  circle(34, 100, 10);
-  circle(50, 110, 5);
+  circle(moonspot1X, moonspot1Y, 10);
+  circle(moonspot2X, moonspot2Y, 5);
+  circle(moonspot3X, moonspot3Y, 15);
 
-  fill("#ffe234");
-  circle(circX, circY, circSize);
+  fill("#ffe85e");
+  arc(circX, circY, circSize, circSize, circStart,circEnd);
 
 push();
-fill("#ffe234");
+fill("#ffe85e");
   translate(rectX,rectY);
   rotate(rectRotate);
   rectMode(CENTER);
   rect(0,0,rectWidth,rectHeight);
 pop();
 
-
-triangle(100 + triX ,20 + triY+ triHeight,90 + triX -triWidth,40 + triY ,110 + triX+triWidth,40 + triY);
   //SubShapes
 
   //Default
@@ -91,6 +93,8 @@ new_letter["arcEnd"]    = map(percent, 0, 100, oldObj["arcEnd"], newObj["arcEnd"
 new_letter["circX"]    = map(percent, 0, 100, oldObj["circX"], newObj["circX"]);
 new_letter["circY"]    = map(percent, 0, 100, oldObj["circY"], newObj["circY"]);
 new_letter["circSize"]    = map(percent, 0, 100, oldObj["circSize"], newObj["circSize"]);
+new_letter["circStart"]    = map(percent, 0, 100, oldObj["circStart"], newObj["circStart"]);
+new_letter["circEnd"]    = map(percent, 0, 100, oldObj["circEnd"], newObj["circEnd"]);
 
 new_letter["rectX"]    = map(percent, 0, 100, oldObj["rectX"], newObj["rectX"]);
 new_letter["rectY"]    = map(percent, 0, 100, oldObj["rectY"], newObj["rectY"]);
@@ -98,13 +102,16 @@ new_letter["rectWidth"]    = map(percent, 0, 100, oldObj["rectWidth"], newObj["r
 new_letter["rectHeight"]    = map(percent, 0, 100, oldObj["rectHeight"], newObj["rectHeight"]);
 new_letter["rectRotate"]    = map(percent, 0, 100, oldObj["rectRotate"], newObj["rectRotate"]);
 
-new_letter["triX"]    = map(percent, 0, 100, oldObj["triX"], newObj["triX"]);
-new_letter["triY"]    = map(percent, 0, 100, oldObj["triY"], newObj["triY"]);
-new_letter["triHeight"]    = map(percent, 0, 100, oldObj["triHeight"], newObj["triHeight"]);
-new_letter["triWidth"]    = map(percent, 0, 100, oldObj["triWidth"], newObj["triWidth"]);
+new_letter["moonspot1X"]    = map(percent, 0, 100, oldObj["moonspot1X"], newObj["moonspot1X"]);
+new_letter["moonspot1Y"]    = map(percent, 0, 100, oldObj["moonspot1Y"], newObj["moonspot1Y"]);
 
-new_letter["imageX"]    = map(percent, 0, 100, oldObj["imageX"], newObj["imageX"]);
-new_letter["imageY"]    = map(percent, 0, 100, oldObj["imageY"], newObj["imageY"]);
+new_letter["moonspot2X"]    = map(percent, 0, 100, oldObj["moonspot2X"], newObj["moonspot2X"]);
+new_letter["moonspot2Y"]    = map(percent, 0, 100, oldObj["moonspot2Y"], newObj["moonspot2Y"]);
+
+new_letter["moonspot3X"]    = map(percent, 0, 100, oldObj["moonspot3X"], newObj["moonspot3X"]);
+new_letter["moonspot3Y"]    = map(percent, 0, 100, oldObj["moonspot3Y"], newObj["moonspot3Y"]);
+
+
 
   return new_letter;
 }
