@@ -12,7 +12,7 @@ const alphabet = {
 
     "rectX" : 90,
     "rectY" : 10,
-    "rectWidth" : 10,
+    "rectWidth" : 7,
     "rectHeight" : 10,
     "rectRotate" : 45,
 
@@ -40,9 +40,9 @@ const alphabet = {
 
     "rectX" : 79,
     "rectY" : 113.9,
-    "rectWidth" : 8,
-    "rectHeight" : 19,
-    "rectRotate" : 162,
+    "rectWidth" : 7,
+    "rectHeight" : 15,
+    "rectRotate" : 160,
 
     "moonspot1X" : 62,
     "moonspot1Y" : 96,
@@ -66,10 +66,10 @@ const alphabet = {
     "circEnd" : 360,
 
     "rectX" : 20,
-    "rectY" : 76,
-    "rectWidth" : 102,
-    "rectHeight" : 7.01,
-    "rectRotate" : 270,
+    "rectY" : 90,
+    "rectWidth" : 7,
+    "rectHeight" : 60,
+    "rectRotate" : 180,
     
     "moonspot1X" : 50,
     "moonspot1Y" : 113.9,
@@ -119,12 +119,20 @@ const alphabet = {
     "circStart" : 0,
     "circEnd" : 360,
 
-    "rectX" : 79,
-    "rectY" : 80,
-    "rectWidth" : 6,
-    "rectHeight" : 95,
-    "rectRotate" : 180
+    "rectX" : 80,
+    "rectY" : 90,
+    "rectWidth" : 7,
+    "rectHeight" : 60,
+    "rectRotate" : 180,
 
+    "moonspot1X" : 62,
+    "moonspot1Y" : 96,
+
+    "moonspot2X" : 45,
+    "moonspot2Y" : 113.9,
+
+    "moonspot3X" : 40,
+    "moonspot3Y" : 94,
   },
 
   "E" : {
@@ -141,7 +149,7 @@ const alphabet = {
     "rectX" : 62,
     "rectY" : 113.9,
     "rectWidth" : 26,
-    "rectHeight" : 4,
+    "rectHeight" : 7,
     "rectRotate" : 180,
 
     "moonspot1X" : 56.9,
@@ -157,29 +165,29 @@ const alphabet = {
 
   "F" : {
 
-    "arcStart" : 0,
-    "arcEnd" : 180,
+    "arcStart" : 90,
+    "arcEnd" : 270,
 
-    "circX" : 50,
-    "circY" : 60,
-    "circSize" : 50,
-    "circStart" : 180,
-    "circEnd" : 360,
+    "circX" : 53,
+    "circY" : 94,
+    "circSize" : 37,
+    "circStart" : 270,
+    "circEnd" : 0,
 
-    "rectX" : 28,
-    "rectY" : 80,
-    "rectWidth" : 5,
-    "rectHeight" : 100,
-    "rectRotate" : 180,
+    "rectX" : 63,
+    "rectY" : 102,
+    "rectWidth" : 7,
+    "rectHeight" : 20,
+    "rectRotate" : 270,
 
-    "moonspot1X" : 36,
-    "moonspot1Y" : 110,
+    "moonspot1X" : 39,
+    "moonspot1Y" : 104,
 
-    "moonspot2X" : 66,
-    "moonspot2Y" : 110,
+    "moonspot2X" : 44,
+    "moonspot2Y" : 113.9,
 
-    "moonspot3X" : 52,
-    "moonspot3Y" : 110
+    "moonspot3X" : 41,
+    "moonspot3Y" : 86
 
   },
 
@@ -188,17 +196,17 @@ const alphabet = {
     "arcStart" : 0,
     "arcEnd" : 290,
 
-    "circX" : 60,
+    "circX" : 61,
     "circY" : 100,
-    "circSize" : 25,
+    "circSize" : 21,
     "circStart" : 360,
     "circEnd" : 180,
 
     "rectX" : 72,
-    "rectY" : 115,
-    "rectWidth" : 30,
-    "rectHeight" : 4,
-    "rectRotate" : 90,
+    "rectY" : 113,
+    "rectWidth" : 7,
+    "rectHeight" : 25,
+    "rectRotate" : 180,
 
     "moonspot1X" : 48,
     "moonspot1Y" : 82,
@@ -224,7 +232,7 @@ const alphabet = {
 
     "rectX" : 65,
     "rectY" : 100,
-    "rectWidth" : 6,
+    "rectWidth" : 7,
     "rectHeight" : 54,
     "rectRotate" : 180,
 
@@ -252,9 +260,9 @@ const alphabet = {
 
     "rectX" : 42,
     "rectY" : 102,
-    "rectWidth" : 56,
-    "rectHeight" : 6,
-    "rectRotate" : 270,
+    "rectWidth" : 52,
+    "rectHeight" : 7,
+    "rectRotate" : 90,
 
     "moonspot1X" : 56.9,
     "moonspot1Y" : 118,
@@ -329,14 +337,14 @@ const alphabet = {
     "arcEnd" : 270,
 
     "circX" : 50,
-    "circY" : 118,
+    "circY" : 121,
     "circSize" : 10.5,
     "circStart" : 0,
     "circEnd" : 360,
 
-    "rectX" : 63,
+    "rectX" : 60,
     "rectY" : 122,
-    "rectWidth" : 28,
+    "rectWidth" : 12,
     "rectHeight" : 6,
     "rectRotate" : 180,
 
@@ -377,7 +385,373 @@ const alphabet = {
     "moonspot3X" : 59,
     "moonspot3Y" : 110
 
-  }
+  },
+
+  "N" : {
+
+    "arcStart" : 298.8,
+    "arcEnd" : 57.6,
+
+    "circX" : 49,
+    "circY" : 100,
+    "circSize" : 50,
+    "circStart" : 122.4,
+    "circEnd" : 237.6,
+
+    "rectX" : 50,
+    "rectY" : 100,
+    "rectWidth" : 48,
+    "rectHeight" : 4,
+    "rectRotate" : 237.6,
+
+    "moonspot1X" : 65,
+    "moonspot1Y" : 88,
+
+    "moonspot2X" : 70,
+    "moonspot2Y" : 108,
+
+    "moonspot3X" : 64,
+    "moonspot3Y" : 94
+
+  },
+
+  "O" : {
+
+    "arcStart" : 0,
+    "arcEnd" : 180,
+
+    "circX" : 50,
+    "circY" : 98,
+    "circSize" : 50,
+    "circStart" : 180,
+    "circEnd" : 0,
+
+    "rectX" : 50,
+    "rectY" : 98,
+    "rectWidth" : 46,
+    "rectHeight" : 5,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 38,
+    "moonspot1Y" : 108,
+
+    "moonspot2X" : 45,
+    "moonspot2Y" : 120,
+
+    "moonspot3X" : 61,
+    "moonspot3Y" : 108
+
+  },
+
+  "P" : {
+
+    "arcStart" : 90,
+    "arcEnd" : 270,
+
+    "circX" : 65,
+    "circY" : 86,
+    "circSize" : 22.5,
+    "circStart" : 0,
+    "circEnd" : 360,
+
+    "rectX" : 57.5,
+    "rectY" : 106,
+    "rectWidth" : 48,
+    "rectHeight" : 7,
+    "rectRotate" : 270,
+
+    "moonspot1X" : 44,
+    "moonspot1Y" : 84,
+
+    "moonspot2X" : 35,
+    "moonspot2Y" : 112,
+
+    "moonspot3X" : 40,
+    "moonspot3Y" : 100
+
+  },
+
+  "Q" : {
+
+    "arcStart" : 90,
+    "arcEnd" : 270,
+
+    "circX" : 51,
+    "circY" : 136,
+    "circSize" : 38.5,
+    "circStart" : 313.2,
+    "circEnd" : 345.59,
+
+    "rectX" : 57,
+    "rectY" : 104,
+    "rectWidth" : 7,
+    "rectHeight" : 59,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 41,
+    "moonspot1Y" : 86,
+
+    "moonspot2X" : 44,
+    "moonspot2Y" : 120,
+
+    "moonspot3X" : 37,
+    "moonspot3Y" : 106
+
+  },
+
+  "R" : {
+
+    "arcStart" : 270,
+    "arcEnd" : 313,
+
+    "circX" : 47,
+    "circY" : 82,
+    "circSize" : 17,
+    "circStart" : 223.2,
+    "circEnd" : 313,
+
+    "rectX" : 44,
+    "rectY" : 100,
+    "rectWidth" : 6,
+    "rectHeight" : 51,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 0,
+    "moonspot1Y" : 48,
+
+    "moonspot2X" : 23,
+    "moonspot2Y" : 48,
+
+    "moonspot3X" : 28,
+    "moonspot3Y" : 26
+
+  },
+
+  "S" : {
+
+    "arcStart" : 266.4,
+    "arcEnd" : 360,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 50,
+    "circStart" : 90,
+    "circEnd" : 180,
+
+    "rectX" : 48,
+    "rectY" : 100,
+    "rectWidth" : 5,
+    "rectHeight" : 50,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 56,
+    "moonspot1Y" : 88,
+
+    "moonspot2X" : 70,
+    "moonspot2Y" : 96,
+
+    "moonspot3X" : 60,
+    "moonspot3Y" : 88
+
+  },
+
+  "T" : {
+
+    "arcStart" : 180,
+    "arcEnd" : 0,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 24.5,
+    "circStart" : 0,
+    "circEnd" : 180,
+
+    "rectX" : 50,
+    "rectY" : 119,
+    "rectWidth" : 6,
+    "rectHeight" : 20,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 38,
+    "moonspot1Y" : 88,
+
+    "moonspot2X" : 50,
+    "moonspot2Y" : 96,
+
+    "moonspot3X" : 63,
+    "moonspot3Y" : 90
+
+  },
+
+  "U" : {
+
+    "arcStart" : 331,
+    "arcEnd" : 90,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 50,
+    "circStart" : 90,
+    "circEnd" : 212.39,
+
+    "rectX" : 73,
+    "rectY" : 122,
+    "rectWidth" : 4,
+    "rectHeight" : 8,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 67,
+    "moonspot1Y" : 100,
+
+    "moonspot2X" : 55,
+    "moonspot2Y" : 120,
+
+    "moonspot3X" : 61,
+    "moonspot3Y" : 106
+
+  },
+
+  "V" : {
+
+    "arcStart" : 298.8,
+    "arcEnd" : 248.39,
+
+    "circX" : 50,
+    "circY" : 102,
+    "circSize" : 46.5,
+    "circStart" : 68.4,
+    "circEnd" : 111.6,
+
+    "rectX" : 47,
+    "rectY" : 100,
+    "rectWidth" : 47,
+    "rectHeight" : 5,
+    "rectRotate" : 248.39,
+
+    "moonspot1X" : 35,
+    "moonspot1Y" : 98,
+
+    "moonspot2X" : 40,
+    "moonspot2Y" : 108,
+
+    "moonspot3X" : 65,
+    "moonspot3Y" : 104
+
+  },
+
+  "W" : {
+
+    "arcStart" : 334.8,
+    "arcEnd" : 201.6,
+
+    "circX" : 50,
+    "circY" : 82,
+    "circSize" : 50,
+    "circStart" : 72,
+    "circEnd" : 108,
+
+    "rectX" : 50,
+    "rectY" : 113.9,
+    "rectWidth" : 8,
+    "rectHeight" : 21,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 36,
+    "moonspot1Y" : 106,
+
+    "moonspot2X" : 68,
+    "moonspot2Y" : 100,
+
+    "moonspot3X" : 55,
+    "moonspot3Y" : 113
+
+  },
+
+  "X" : {
+
+    "arcStart" : 280.8,
+    "arcEnd" : 345.59,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 50,
+    "circStart" : 93.6,
+    "circEnd" : 162,
+
+    "rectX" : 50,
+    "rectY" : 100,
+    "rectWidth" : 4,
+    "rectHeight" : 48,
+    "rectRotate" : 133.2,
+
+    "moonspot1X" : 59,
+    "moonspot1Y" : 88,
+
+    "moonspot2X" : 69,
+    "moonspot2Y" : 90,
+
+    "moonspot3X" : 61,
+    "moonspot3Y" : 88
+
+  },
+
+  "W" : {
+
+    "arcStart" : 334.8,
+    "arcEnd" : 201.6,
+
+    "circX" : 50,
+    "circY" : 82,
+    "circSize" : 50,
+    "circStart" : 72,
+    "circEnd" : 108,
+
+    "rectX" : 50,
+    "rectY" : 113.9,
+    "rectWidth" : 8,
+    "rectHeight" : 21,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 36,
+    "moonspot1Y" : 106,
+
+    "moonspot2X" : 68,
+    "moonspot2Y" : 100,
+
+    "moonspot3X" : 55,
+    "moonspot3Y" : 113
+
+  },
+
+  "Y" : {
+
+    "arcStart" : 212.39,
+    "arcEnd" : 331.2,
+
+    "circX" : 50,
+    "circY" : 100,
+    "circSize" : 25,
+    "circStart" : 212.39,
+    "circEnd" : 331.2,
+
+    "rectX" : 50,
+    "rectY" : 108,
+    "rectWidth" : 4,
+    "rectHeight" : 35,
+    "rectRotate" : 180,
+
+    "moonspot1X" : 62,
+    "moonspot1Y" : 86,
+
+    "moonspot2X" : 35,
+    "moonspot2Y" : 86,
+
+    "moonspot3X" : 47,
+    "moonspot3Y" : 86
+
+  },
+
+  
 
 // "A": {
   //  "aLengthX1" : 50,

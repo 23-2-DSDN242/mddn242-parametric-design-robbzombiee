@@ -50,9 +50,10 @@ function drawLetter(letterData) {
   // draw two circles
   // MainShapes
   noStroke()
-  fill("#ffe85e");
+  fill("#FFFFFF");
   circle(10, 10, 10);
-  rect(50,5,10,10);
+  circle(30, 30, 5);
+  circle(50, 12, 8);
 
   //A//
   angleMode(DEGREES);
