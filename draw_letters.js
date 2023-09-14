@@ -125,7 +125,7 @@ new_letter["moonspot3Y"]    = map(percent, 0, 100, oldObj["moonspot3Y"], newObj[
 }
 
 var swapWords = [
-  "ABBABBAB",
-  "CAB?CAB?",
-  "BAAAAAAA"
+  "MOONSTAR",
+  "ETHEREAL",
+  "HEAVENLY"
 ]
