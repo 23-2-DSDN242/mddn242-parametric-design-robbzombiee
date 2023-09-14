@@ -1,12 +1,13 @@
 /* these are optional special variables which will change the system */
-var systemBackgroundColor = "#546bab";
-var systemLineColor = "#000090";
+var systemBackgroundColor = "#2e4482"; // background color of night sky.
+var systemLineColor = "#FFFFFF"; // set system line color to white
 var systemBoxColor = "#00c800";
 
-/* internal constants */
-const darkBlue  = "#0077b6";
-const lightBlue  = "#90e0ef";
-const strokeColor  = "#03045e";
+// colour variables
+const moonColour = "#e5e5e5";
+const moonspotColour = "#c2c2c2";
+const starlightColour  = "#ffe85e";
+const starColour  = "#FFFFFF";
 
 /*
  * Draw the letter given the letterData
@@ -16,14 +17,8 @@ const strokeColor  = "#03045e";
  * from (0,0) to (100, 200)
  */
 function drawLetter(letterData) {
-  // color/stroke setup
-  //stroke(strokeColor);
-  //strokeWeight(4);
 
-  // determine parameters for second circle
-
-  //let aLengthX1 = letterData["aLengthX1"];
-
+  // variables
   let arcStart = letterData["arcStart"];
   let arcEnd = letterData["arcEnd"];
 
@@ -47,41 +42,53 @@ function drawLetter(letterData) {
   let moonspot3Y = letterData["moonspot3Y"];
 
 
-  // draw two circles
-  // MainShapes
-  noStroke()
-  fill("#FFFFFF");
-  circle(10, 10, 10);
-  circle(30, 30, 5);
-  circle(50, 12, 8);
+  angleMode(DEGREES); // change angle mode to degrees
 
-  //A//
-  angleMode(DEGREES);
+// stars background
+  noStroke()
+  fill(starColour); // set stars to white color
+  circle(10, 10, 4);
+  circle(30, 30, 3);
+  circle(50, 12, 5);
+  circle(90, 12, 5);
+  circle(88, 40, 4);
+  circle(15, 50, 4);
+  circle(18, 130, 4);
+  circle(30, 140, 3);
+  circle(60, 30, 4);
+  circle(60, 60, 3);
+  circle(90, 190, 4);
+  circle(40, 185, 4);
+  circle(70, 160, 4);
+  circle(10, 160, 4);
+  circle(11, 100, 4);
+  circle(90, 130, 4);
+
+  // end of stars background
   
+  // main moon arc
   noStroke();
-  fill("#e5e5e5")
+  fill(moonColour); // set moon arc to grey
   arc(50,100,50,50,arcStart,arcEnd);
 
-  //moon moonspots
-  fill("#c2c2c2")
+  //moonspots circle shapes
+  fill(moonspotColour); // set moonspot circles to light grey color
   circle(moonspot1X, moonspot1Y, 10);
   circle(moonspot2X, moonspot2Y, 5);
   circle(moonspot3X, moonspot3Y, 15);
 
-  fill("#ffe85e");
+// starlight arc shape
+  fill(starlightColour);
   arc(circX, circY, circSize, circSize, circStart,circEnd);
 
+  // starlight rectangle rotation
 push();
-fill("#ffe85e");
-  translate(rectX,rectY);
-  rotate(rectRotate);
-  rectMode(CENTER);
-  rect(0,0,rectWidth,rectHeight);
+fill(starlightColour); // set starlight rectangle to yellow
+  translate(rectX,rectY); // set  rectangle origin to rectx,recty
+  rotate(rectRotate); // rorate rectange to rectrotate value
+  rectMode(CENTER); // get center to rectangle
+  rect(0,0,rectWidth,rectHeight); // create starlight rectangle
 pop();
-
-  //SubShapes
-
-  //Default
 
 }
 
@@ -118,7 +125,7 @@ new_letter["moonspot3Y"]    = map(percent, 0, 100, oldObj["moonspot3Y"], newObj[
 }
 
 var swapWords = [
-  "ABBAABBA",
+  "ABBABBAB",
   "CAB?CAB?",
   "BAAAAAAA"
 ]
